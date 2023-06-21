@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="./login.css">
+</head>
+
+<body>
+  <h2 class="pageHeadline">Login</h2>
+
+  <form onsubmit="login(event)">
+    <label for="email">Enter Email:</label>
+    <br>
+    <input type="email" name="email" required>
+    <br>
+    <label for="password">Enter Password:</label>
+    <br>
+    <input type="password" name="password" required>
+    <br>
+    <button>Login</button>
+    <br>
+    <br>
+    <a href="../signup/signup.html">Not an Existing--User Signup</a>
+    <br>
+    <br>
+    <a href="../forgotpassword/forgotpassword.html">Forgot Password?</a>
+    <br>
+    <br>
+  </form>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+  <script src="./login.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+  .pageHeadline {
+   text-align: center;
+   
+ }
+ form {
+   
+   text-align: center;
+   background: rgb(230, 180, 42);
+ }
+
+ 
+ input {
+   font-size: 30px;
+   color: rgb(45, 50, 45);
+   width: 550px;
+ }
+ 

@@ -1,0 +1,80 @@
+<html>
+<head>
+   
+  <title>Expense Tracker</title>
+  <h2>Expense Tracker</h2>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <h2 class="pageHeadline">Expenses</h2>
+  <form onsubmit="saveToLocalStorage(event)">
+    <label>Expense Amount</label>
+    <br>
+    <input id="expenseAmount", type="text", name="expenseAmount" required />
+    <br>
+    <label>Description</label>
+    <br>
+    <input id="expenseDescription", type="text", name="expenseDescription" required />
+    <br>
+    <label>Category</label>
+    <br>
+    <input list="category" name="category"> 
+    <datalist id="category" required/>
+      <option value="Grocery"></option>
+      <option value="food"></option>
+      <option value="petrol"></option>
+      <option value="Garments"></option>
+      <option value="accessories"> 
+      <option value="Beauty Products">
+      <option>
+    </datalist>
+    <br>
+    <button>Add Item</button>
+    <br>
+    
+    <br>
+  </form>
+
+  <div id="message"></div>
+  <button id="rzp-btn">Buy Premium</button>
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+  <h1>
+    Expenses
+  </h1>
+
+  <ul id='listOfItems'></ul>
+
+  <div class="expense">
+    <ul id="allExpenses" class="list1"></ul>
+    <div id="pagination" class="pagination"></div>
+  </div> 
+
+  <br/>
+  
+    <div id="pagelist">
+      <label for="price">Rows Per Page</label>
+      <select name="price" id="price" onchange="rowChange(event)">
+        <option value='0'>0</option>
+        <option value='2'>2</option>
+        <option value='4'>4</option>
+        <option value='6'>6</option>
+      </select>
+    </div>
+   
+    <br />
+    
+    
+  <div id="leaderboard">
+    <ul> </ul>
+  </div>
+
+  <br />
+  <br />
+  
+  <button id="logoutBtn">Logout</button>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+  <script src="../index/index.js"></script>
+</body>
+</html>  
